@@ -18,7 +18,7 @@ A continuación se te harán algunas preguntas acerca del contenido del video. D
 
 Entonces a manera general el esquema de la guía de etiquetado es el siguiente:
 
-<img src="hsdvmi-annotation-guideline.PNG" alt="Figure for the dataset creation" width="900">
+<img src="esquema-guia-anotacion-video.svg" alt="Figure for the dataset creation" width="900">
 
 ### Definición de Discurso de Odio
 De acuerdo con la Organización de las Naciones Unidas se considera [**discurso de odio**](https://www.un.org/en/hate-speech/understanding-hate-speech/what-is-hate-speech) a _"cualquier forma de comunicación en el habla, escrita o por comportamiento, que ataca o utiliza lenguaje discriminatorio o despectivo hacia una persona o grupo basado en su identidad, en otras palabras, basado en factores como su religión, etnicidad, nacionalidad, raza, color, descendencia, género u otros factores asociados a su identidad."_ (United Nations, n.d.)
