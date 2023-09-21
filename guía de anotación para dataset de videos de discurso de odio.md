@@ -1,6 +1,8 @@
 # Guía de annotación de _dataset_ de videos para la tarea de detección de discurso de odio
 
 - [Información general](#información-general)
+- [El video NO presenta contenido de odio](#el-video-no-presenta-contenido-de-odio)
+- [El video SÍ presenta contenido de odio](#el-video-si-presenta-contenido-de-odio)
 
 ## Información general
 Una vez en la plataforma de etiquetado se te mostrarán videos de aproximadamente 1 minuto de longitud. Cada video se reproducirá automáticamente y al finalizar podrás repetirlo si gustas.
