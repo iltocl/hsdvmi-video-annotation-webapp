@@ -7,7 +7,9 @@
   - [Tipo de Comunicación](#tipo-de-comunicación)
   - [Intención](#intención)
   - [Objetivo](#objetivo)
-  - [Factor/Características](#factor-características) 
+  - [Factor](#factor) 
+- [Notas Importantes](#notas-importantes)
+- [Contacto](#contacto)
 
 ## Información general
 Una vez en la plataforma de etiquetado se te mostrarán videos de aproximadamente 1 minuto de longitud. Cada video se reproducirá automáticamente y al finalizar podrás repetirlo si gustas.
@@ -26,7 +28,7 @@ De la definición rescatamos 4 aspectos importantes a considerar, el tipo de com
 ## El video NO presenta contenido de odio
 En caso de que el video NO presente contenido de discurso de odio se te preguntará si es relevante o no.
 - **Relevante**
-  - 
+  - Todo aquel video en el que directa o indirectamente se perciba a alguien dando una opinión o a un grupo de personas interactuando 
 - **No Relevante** 
   - Es un video musical
   - Es un video en lenguaje diferente al español
@@ -40,8 +42,46 @@ Estos aspectos son:
 - Factor/Características
 
 ### Tipo de Comunicación
+En este caso se toman en cuenta las siguientes formas de comunicar un mensaje:
+- **Comunicación Verbal** (p. ej. narraciones, expresiones, conversaciones, entrevistas)
+- **Comunicación No Verbal** (p. ej. lenguaje corporal, gestos, expresiones faciales)
+- **Comunicación Visual** (p. ej. imágenes, símbolos)
+- **Comunicación Textual** (p. ej. _posters_, subtítulos)
+- **Comunicación en Masa** (p. ej. mensaje con el objetivo de informar a una audiencia, noticieros)
+En este punto una o más formas de comunicación pueden ser percibidas.
+
 ### Intención
+La **intención** se refiere al propósito del mensaje o acción percibida. En este caso se considera:
+- **Ataque físico**
+- **Expresión de descontento y/o desaprobación**
+- **Expresión humorística**
+En este punto una o más intenciones pueden ser percibidas.
+
 ### Objetivo
-### Factor/Características
+En este caso el **objetivo** determina si el mensaje va dirigido hacia un **grupo** o hacia una persona en particular (**individuo**). 
 
+### Factor
+En este caso el factor y/o características hacen referencia la "razón" del contenido del mensaje. Entonces estos factores están relacionados con la **identidad** de hacia quién va dirigido el mensaje. Por ejemplo:
+- **Discriminación**
+- **Misoginia**
+- **Violencia**
+En este punto uno o más factores de identidad pueden ser percibidos.
 
+De acuerdo con la ["Guía de lenguaje incluyente y no sexista"](https://www.gob.mx/sre/documentos/guia-de-lenguaje-incluyente-y-no-sexista?state=published) de la SRE, algunos de los conceptos se definen como:
+
+| Concepto | Definición |
+|----------|----------|
+| Discriminación    | **Toda distinción, exclusión o restricción que**, basada en el origen étnico o nacional, sexo, edad, discapacidad, condición social o económica, condiciones de salud, embarazo, lengua, religión, opiniones, preferencias sexuales, estado civil o cualquier otra, **tenga por efecto impedir o anular el reconocimiento o el ejercicio de los derechos y la igualdad real de oportunidades de las personas**. |
+| Misoginia    | Cualquier **conducta de odio hacia la mujer** que se manifiesta en actos violentos y crueles contra ella por el hecho de ser mujer. |
+| Violencia    | **Cualquier acción u omisión que cause daño o sufrimiento** psicológico, físico, patrimonial, económico, sexual o la muerte, y que se puede presentar tanto en el ámbito privado como en el público |
+
+Para este caso tomamos tres factores como referencia. Sin embargo, si percibieras algún otro agradeceríamos nos lo indicaras en la sección de comentarios.
+
+# Notas Importantes
+- No olvides presionar el botón `Guardar y Continuar` cada vez que termines de etiquetar un video, de lo contrario el etiquetado de ese video no quedará guardado.
+- Es posible `Cerrar sesión` y volver a etiquetar más tarde, tu progreso será guardado para que cuando vuelvas a `Iniciar sesión` retomes desde guardaste la última vez.
+- Al momento de `Registrarte` se te asignó un cierto número de videos, así que cuando acabes de etiquetar (en caso de que aún tengamos videos disponibles) podrás decidir si gustas etiquetar otro conjunto de videos o no.
+
+# Contacto
+En caso de cualquier duda y/o problema escribe al correo.
+📧: itzel.tlelo@gmail.com
