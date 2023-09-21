@@ -5,6 +5,7 @@ This is a web app to annotate the video dataset built up for the hate speech det
   - [Summary](#summary)
   - [Getting Started](#getting-started)
       - [Code Structure](#code-structure)
+      - [Sharing the webapp](#sharing-the-webapp)
   - [Media Coverage](#media-coverage)
 
 # Summary
