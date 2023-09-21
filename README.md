@@ -6,6 +6,7 @@ This is a web app to annotate the video dataset built up for the hate speech det
   - [Getting Started](#getting-started)
       - [Code Structure](#code-structure)
       - [Sharing the webapp](#sharing-the-webapp)
+      - [Web app Preview](#web-app-preview)
   - [Media Coverage](#media-coverage)
 
 # Summary
@@ -47,4 +48,8 @@ ngrok http port=5000
 ```
 If there is no problem you will be able to get a URL that allows you to share the app.
 
+## Web app Preview
+The web app looks like this:
+
 # Media Coverage
+Documentation of the built-up of the ["Mexican Spanish based video dataset for the hate speech detection task"](https://github.com/iltocl/dcc-hsdvmi-video-dataset/blob/main/README.md)
