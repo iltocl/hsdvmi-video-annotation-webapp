@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Registrarse</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Inicio de sesión</a></li>
+        <li><a href="/register">Crear una cuenta</a></li>
+      </ul>
+    </nav>
+
+    <h1 style="color:  #174063;">Plataforma para Etiquetado de Dataset de Videos</h1>
+
+    <h1>Crear una cuenta</h1>
+    <form action="#" method="post">
+      <p style="color:red;">{{message}}</p>
+
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" name="username" />
+      <label for="password">Contraseña:</label>
+      <input type="password" name="password" />
+      
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

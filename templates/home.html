@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Inicio</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/login">Inicio de sesión</a></li>
+        <li><a href="/register">Crear una cuenta</a></li>
+      </ul>
+    </nav>
+
+    <h1>Plataforma para Etiquetado de Dataset de Videos</h1>
+
+    {% if current_user.is_authenticated %}
+      <p>Favor de volver a iniciar sesión.</p>
+      
+    {% else %}
+      <p style="color: gray;">No has iniciado sesión aún.</p>
+    {% endif %}
+
+
+    <h2>Información General</h2>
+    <p>Una vez en la plataforma de etiquetado se te mostrarán videos de aproximadamente 1 minuto de longitud. </p>
+    <p>Cada video se reproducirá automáticamente y al finalizar podrás repetirlo si gustas.</p>
+    <p>A continuación se te harán algunas preguntas acerca del contenido del video. </p>
+    <p>De manera general, es importante que marques si el video presenta o no contenido de odio. Las demás preguntas son para complementar la información a partir de esta primera respuesta.</p>
+    <br>
+    <br>
+    <p>Gracias por tu participación.</p>
+
+  </body>
+</html>

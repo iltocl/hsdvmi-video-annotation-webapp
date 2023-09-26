@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Etiquetado de Video</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>{{message}}</h1>
+
+    <div class="container">
+      <div class="column">
+          <h2>Etiquetado de Video</h2>
+          <video width="640" height="480" controls="" autoplay="">
+            <source src="{{ video_path }}" type="video/mp4" />
+        </video>
+    
+        <p>Las siguientes preguntas están relacionadas al contenido del video. Favor de rellenar el mayor número de casillas posibles.</p>
+    
+        <form id="myForm" onsubmit="return submitForm()">
+
+          <div class="class-hs-or-not">
+            <p>¿El video muestra contenido de odio?</p>
+            <input type="radio" id="id-neutral" name="hs-tag" value="-1" style="display: none;" checked>
+            
+            <input type="radio" id="id-hate-speech" name="hs-tag" value="1">
+            <label for="id-hate-speech">Sí contiene contenido de odio</label><br>
+            <input type="radio" id="id-no-hate-speech" name="hs-tag" value="0">
+            <label for="id-no-hate-speech">No contiene contenido de odio</label><br>
+          </div>
+        
+        <div id="class-nhs-selected" style="display: none;">
+          <div class="class-relevant-or-not">
+            <p>¿El video es relevante?</p>
+            <input type="radio" id="id-relevant-neutro" name="relevant-tag" value="-1" style="display: none;" checked>
+            
+            <input type="radio" id="id-relevant" name="relevant-tag" value="1">
+            <label for="id-relevant">Sí es relevante</label><br>
+            <input type="radio" id="id-no-relevant" name="relevant-tag" value="0">
+            <label for="id-no-relevant">No es relevante</label><br>
+          </div>
+        </div>
+    
+        
+        <div id="class-hs-selected" style="display: none;">
+          <div class="class-hs-target">
+            <p>¿A quién va dirigido el mensaje/la intención?</p>
+            <input type="radio" id="id-target-neutro" name="target-tag" value="-1" style="display: none;" checked>
+            
+            <input type="radio" id="id-individual" name="target-tag" value="0">
+            <label for="id-individual">Individuo</label><br>
+            <input type="radio" id="id-group" name="target-tag" value="1">
+            <label for="id-group">Grupo</label><br>
+          </div>
+          
+          <div class="class-hs-kind-of-communication">
+            <p>¿Qué tipo/tipos de comunicación percibes el video?</p>
+            <input type="checkbox" id="id-communication-neutral" name="communication-tag" value="-1" style="display: none;" checked>
+            
+            <input type="checkbox" id="id-verbal" name="communication-tag" value="0">
+            <label for="id-verbal">Comunicación Verbal</label><br>
+            <input type="checkbox" id="id-no-verbal" name="communication-tag" value="1">
+            <label for="id-nonverbal">Comunicación No Verbal</label><br>
+            <input type="checkbox" id="id-visual" name="communication-tag" value="2">
+            <label for="id-visual">Comunicación Visual</label><br>
+            <input type="checkbox" id="id-textual" name="communication-tag" value="3">
+            <label for="id-textual">Comunicación Textual</label><br>
+            <input type="checkbox" id="id-en-masa" name="communication-tag" value="4">
+            <label for="id-en-masa">Comunicación en Masa</label><br>
+          </div>
+          
+          <div class="class-hs-intention">
+            <p>¿Cuál consideras es la intención y/o acto mostrados en el video?</p>
+            <input type="checkbox" id="id-intention-neutral" name="intention-tag" value="-1" style="display: none;" checked>
+            
+            <input type="checkbox" id="id-attack" name="intention-tag" value="0">
+            <label for="id-attack">Ataque físico</label><br>
+            <input type="checkbox" id="id-pejorative" name="intention-tag" value="1">
+            <label for="id-pejorative">Expresión de descontento y/o desaprobación</label><br>
+            <input type="checkbox" id="id-humoristic" name="intention-tag" value="2">
+            <label for="id-humoristic">Expresión humorística</label><br>
+          </div>
+    
+          <div class="class-hs-factor">
+            <p>¿Qué factores/categorías son expresadas en el video?</p>
+            <input type="checkbox" id="id-factor-neutral" name="factor-tag" value="-1" style="display: none;" checked>
+            
+            <input type="checkbox" id="id-discrimination" name="factor-tag" value="0">
+            <label for="id-discrimination">Discriminación</label><br>
+            <input type="checkbox" id="id-misogyny" name="factor-tag" value="1">
+            <label for="id-misogyny">Misoginia</label><br>
+            <input type="checkbox" id="id-gender" name="factor-tag" value="2">
+            <label for="id-gender">Violencia</label><br>
+
+            <input type="checkbox" id="id-otro" name="factor-tag" value="3">
+            <label for="id-otro">Otro (favor de especificar en la sección de comentarios) </label><br>
+
+          </div>
+        </div>
+    
+            <p>¿Algunos comentarios para complementar la información sobre el video?</p>
+            <textarea rows="5" cols="60" name="txt-notes" placeholder="Escribe tus comentarios"></textarea><br>
+            <br>
+            
+            <input type="submit" id="id-btn-video-annotation" value="Guardar y Continuar" style="display: none; font-family: sans-serif; font-size: 16px;">
+            <p style="color: #FF0000;">No olvides presionar el botón "Guardar y Continuar" para no perder tus respuestas.</p>
+        </form>
+      </div>
+      
+      <div class="column">
+          <h2>Guía de Etiquetado</h2>
+          
+          <button type="button" class="collapsible">¿Qué se considera <b>discurso de odio</b>?</button>
+          <div class="content">
+            <p>"toda aquella forma de comunicación, ya sea por habla, escrita o de comportamiento que ataca y/o usa lenguaje despectivo, hacia un individuo o grupo, basado en características propias de su identidad. Por ejemplo, su religión, etnicidad, nacionalidad, raza, color, descendencia, género u otros factores de identidad."</p>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="collapsible">¿Cuál sería un video <b>no relevante</b>?</button>
+          <div class="content">
+            <p>Es un video musical</p>
+            <p>Es un video en un idioma diferente al español</p>
+          </div>
+
+          <br>
+          <br>
+          <div id="div-hs-content" style="display: none;">
+            <button type="button" class="collapsible">¿A qué se refiere con el <b>tipo de comunicación</b>?</button>
+            <div class="content">
+              <p>Verbal: conversaciones, expresiones habladas, entrevistas</p>
+              <p>No Verbal: lenguaje corporal, expresiones faciales</p>
+              <p>Visual: imágenes, símbolos</p>
+              <p>Textual: subtítulos</p>
+              <p>En Masa: informativo</p>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <footer><a href="/logout" style="color: white;">Cerrar sesión</a></footer>
+    
+    
+    <script src="/static/componentsBehaviours.js" charset="utf-8"></script>
+  </body>
+</html>
