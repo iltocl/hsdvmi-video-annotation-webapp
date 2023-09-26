@@ -37,20 +37,25 @@ An annotator's guideline is provided. The guideline [guía de anotación para da
 ├── venv                         # virtual environment
 ├── app.py                       # main script to run the app
 ├── batches_dict.txt
-├── my_functions.py  
+├── my_functions.py
+├── requirements.txt             # requirements file to be installed to run the app
 ├── guideline                    # annotator's guideline files 
 │   ├── esquema-guia-anotacion-video.svg
 │   ├── guía de anotación para dataset de videos de discurso de odio.md     # annotator's guideline
 └── README.md
 ```
 ### Requirements
-
-For the `venv`
+To install the `requirements.txt`. Execute this in your console:
 ```bash
-.\venv\Scripts\activate 
+pip install -r requirements.txt
+```
+If you made changes and want to save the new requirements. 
+```bash
+pip freeze > requirements.txt
 ```
 
-To activate the `venv` on your console:
+### Virtual Environment (venv) activation
+To activate the `venv`
 ```bash
 .\venv\Scripts\activate 
 ```
@@ -58,15 +63,12 @@ To deactivate the `venv` on your console:
 ```bash
 deactivate
 ```
-
 ## Sharing the webapp
-We used [ngrok](https://ngrok.com/) to share our app. So, if you plan to use it too a download and configuration for ngrok is required. 
-
-To share the web app first execute the file `app.py` on your console:
+We used [ngrok](https://ngrok.com/) to share our app. So, if you plan to use it too a download and configuration for ngrok is required. Once it is correctly installed on your system. To share the web app first execute the file `app.py` on your console:
 ```bash
 python app.py
 ```
-by default, it would be running on the port 5000. 
+by default, it would be running on port 5000 (flask default port). 
 Then, open another bash on the location where you installed the `ngrok.exe` file and execute:
 ```bash
 ngrok http port=5000
