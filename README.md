@@ -19,21 +19,37 @@ An annotator's guideline is provided. The guideline [guía de anotación para da
 # Getting Started
 ## Code Structure
 ```
-├── batch_files                # csv files that contains information of the videos of each batch
-├── etiquetados                # csv files where each one contains the labels of each user
-├── instance                   # sqlite database file 
-│   ├── df.sqlite
-├── static                     # css and javascript files
-│   ├── pool-videos            # videos (.mp4) that are going to be annotated
-├── templates                  # html files
-├── venv
-├── app.py                     # main script to run the app
-├── batches_annotators.py
-├── batches_dict.txt
-├── def_funcionts.py
+├── batch_files                  # csv files that contains information of the videos of each batch
+├── etiquetados                  # csv files where each one contains the labels of each user
+├── instance                     # sqlite database file 
+│   ├── db.sqlite
+├── static                       # css and javascript files
+│   ├── pool-videos              # videos (.mp4) that are going to be annotated
+│   ├── componentsBehaviours.js  
+│   ├── style.css
+├── templates                    # html files
+│   ├── home.html                # home page
+│   ├── sign_up.html             # sign up page (it is required username and password)
+│   ├── login.html               # login page (it is required username and password)
+│   ├── video.html               # video annotation page
+│   ├── end.html                 # assigned annotation list completed page 
+│   ├── no.html                  # no more videos to annotate at the moment page
+├── venv                         # virtual environment
+├── app.py                       # main script to run the app
+├── batches_dict.txt              
+├── my_functions.py
 ├── guía de anotación para dataset de videos de discurso de odio     # annotator's guideline
 └── README.md
 ```
+To activate the `venv` on your console:
+```bash
+.\venv\Scripts\activate 
+```
+To deactivate the `venv` on your console:
+```bash
+deactivate
+```
+
 ## Sharing the webapp
 We used [ngrok](https://ngrok.com/) to share our app. So, if you plan to use it too a download and configuration for ngrok is required. 
 
