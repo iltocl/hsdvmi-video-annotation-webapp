@@ -36,9 +36,11 @@ An annotator's guideline is provided. The guideline [guía de anotación para da
 │   ├── no.html                  # no more videos to annotate at the moment page
 ├── venv                         # virtual environment
 ├── app.py                       # main script to run the app
-├── batches_dict.txt              
-├── my_functions.py
-├── guía de anotación para dataset de videos de discurso de odio     # annotator's guideline
+├── batches_dict.txt
+├── my_functions.py  
+├── guideline                    # annotator's guideline files 
+│   ├── esquema-guia-anotacion-video.svg
+│   ├── guía de anotación para dataset de videos de discurso de odio.md     # annotator's guideline
 └── README.md
 ```
 To activate the `venv` on your console:
