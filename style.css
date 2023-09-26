@@ -1,0 +1,117 @@
+/* 
+Nav bar https://www.w3schools.com/css/css_navbar_horizontal.asp 
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #174063;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #519da0;
+}
+
+/* 
+footer 
+*/
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #174063;
+}
+footer a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #519da0;
+}
+
+
+/*
+general styles
+*/
+body, h1, h2, h3, li, label, button, input, textarea, a, body, div, p {
+    font-family: Arial, sans-serif;
+}
+
+
+h1{
+    color: #174063;
+    font-size: 36px;
+}
+label{
+    font-size: 16px;
+}
+button{
+    font-size: 16px;
+}
+input[type="radio"] {
+    font-size: 16px; 
+}
+textarea {
+    font-size: 16px; 
+}
+a {
+    font-size: 20px;
+    color: #3b5994;
+}
+
+/*
+Guía de etiquetado
+*/
+.container {
+    display: flex;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+}
+.column:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  /* end style button */
+#id-btn-next-batch:hover {
+    background-color: #519da0;
+}
