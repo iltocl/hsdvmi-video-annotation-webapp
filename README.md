@@ -43,6 +43,13 @@ An annotator's guideline is provided. The guideline [guía de anotación para da
 │   ├── guía de anotación para dataset de videos de discurso de odio.md     # annotator's guideline
 └── README.md
 ```
+### Requirements
+
+For the `venv`
+```bash
+.\venv\Scripts\activate 
+```
+
 To activate the `venv` on your console:
 ```bash
 .\venv\Scripts\activate 
