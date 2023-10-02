@@ -44,24 +44,27 @@ An annotator's guideline is provided. The guideline [guía de anotación para da
 │   ├── guía de anotación para dataset de videos de discurso de odio.md     # annotator's guideline
 └── README.md
 ```
-### Requirements
-To install the `requirements.txt`. Execute this in your console:
+### 1. Create and activate the Virtual Environment
+After download the repository it is necessary to create a Virtual Environment. You only have to do this once. 
+```bash
+python -m venv virtual_environment_name
+```
+To activate the `venv`
+```bash
+.\virtual_environment_name\Scripts\activate 
+```
+To deactivate the `venv` on your console:
+```bash
+deactivate
+```
+### 2. Install the necessary Requirements
+To install the `requirements.txt`. Once you activated your virtual environment execute this in your console:
 ```bash
 pip install -r requirements.txt
 ```
 If you made changes and want to save the new requirements. 
 ```bash
 pip freeze > requirements.txt
-```
-
-### Virtual Environment (venv) activation
-To activate the `venv`
-```bash
-.\venv\Scripts\activate 
-```
-To deactivate the `venv` on your console:
-```bash
-deactivate
 ```
 ## Sharing the webapp
 We used [ngrok](https://ngrok.com/) to share our app. So, if you plan to use it too a download and configuration for ngrok is required. Once it is correctly installed on your system. To share the web app first execute the file `app.py` on your console:
