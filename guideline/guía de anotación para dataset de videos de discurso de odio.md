@@ -30,7 +30,7 @@ En caso de que el video NO presente contenido de discurso de odio se te pregunta
 - **Relevante**
   - Todo aquel video en el que directa o indirectamente se perciba a alguien dando una opinión o a un grupo de personas interactuando 
 - **No Relevante** 
-  - Es un video musical
+  - Es un video que únicamente muestra una imagen de fondo y música instrumental
   - Es un video en lenguaje diferente al español
 
 ## El video SÍ presenta contenido de odio
@@ -80,7 +80,7 @@ Para este caso tomamos tres factores como referencia. Sin embargo, si percibiera
 # Notas Importantes
 - No olvides presionar el botón `Guardar y Continuar` cada vez que termines de etiquetar un video, de lo contrario el etiquetado de ese video no quedará guardado.
 - Es posible `Cerrar sesión` y volver a etiquetar más tarde, tu progreso será guardado para que cuando vuelvas a `Iniciar sesión` retomes desde guardaste la última vez.
-- Al momento de `Registrarte` se te asignó un cierto número de videos, así que cuando acabes de etiquetar (en caso de que aún tengamos videos disponibles) podrás decidir si gustas etiquetar otro conjunto de videos o no.
+- Al momento de `Iniciar Sesión` se te asignó un cierto número de videos, así que cuando acabes de etiquetar (en caso de que aún tengamos videos disponibles) podrás decidir si gustas etiquetar otro conjunto de videos o no.
 
 # Contacto
 En caso de cualquier duda y/o problema escribe al correo.
