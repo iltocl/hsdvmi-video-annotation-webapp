@@ -49,6 +49,7 @@ En este caso se toman en cuenta las siguientes formas de comunicar un mensaje:
 - **Comunicación Visual** (p. ej. imágenes, símbolos)
 - **Comunicación Textual** (p. ej. _posters_, subtítulos)
 - **Comunicación en Masa** (mensaje con el objetivo de informar a una audiencia, p. ej. noticieros, narración del suceso por un tercero)
+
 En este punto una o más formas de comunicación pueden ser percibidas.
 
 ### Intención
