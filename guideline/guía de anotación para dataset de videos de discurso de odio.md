@@ -32,6 +32,7 @@ En caso de que el video NO presente contenido de discurso de odio se te pregunta
 - **No Relevante** 
   - Es un video que únicamente muestra una imagen de fondo y música instrumental
   - Es un video en lenguaje diferente al español
+  - Es un video que tiene muy poca duración (<20 segundos)
 
 ## El video SÍ presenta contenido de odio
 En caso de que el video SÍ presente contenido de discurso de odio se te preguntarán algunos aspectos relacionados a la "Definición de Discurso de Odio" mostrada anteriormente. Intenta llenar el formulario con la máxima información posible de lo que percibas.
@@ -47,7 +48,7 @@ En este caso se toman en cuenta las siguientes formas de comunicar un mensaje:
 - **Comunicación No Verbal** (p. ej. lenguaje corporal, gestos, expresiones faciales)
 - **Comunicación Visual** (p. ej. imágenes, símbolos)
 - **Comunicación Textual** (p. ej. _posters_, subtítulos)
-- **Comunicación en Masa** (p. ej. mensaje con el objetivo de informar a una audiencia, noticieros)
+- **Comunicación en Masa** (mensaje con el objetivo de informar a una audiencia, p. ej. noticieros, narración del suceso por un tercero)
 En este punto una o más formas de comunicación pueden ser percibidas.
 
 ### Intención
