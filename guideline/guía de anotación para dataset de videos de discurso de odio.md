@@ -86,4 +86,4 @@ Para este caso tomamos tres factores como referencia. Sin embargo, si percibiera
 
 # Contacto
 En caso de cualquier duda y/o problema escribe al correo.
-📧: itzel.tlelo@gmail.com
+📧: 
