@@ -67,6 +67,8 @@ En este caso el factor y/o características hacen referencia la "razón" del con
 - **Discriminación**
 - **Misoginia**
 - **Violencia**
+- **Otros**
+
 En este punto uno o más factores de identidad pueden ser percibidos.
 
 De acuerdo con la ["Guía de lenguaje incluyente y no sexista"](https://www.gob.mx/sre/documentos/guia-de-lenguaje-incluyente-y-no-sexista?state=published) de la SRE, algunos de los conceptos se definen como:
