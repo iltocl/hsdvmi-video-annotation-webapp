@@ -57,8 +57,8 @@ global DIR_PATH_ETIQUETADOS
 DIR_PATH_ETIQUETADOS = "etiquetados/" 
 # dictionary to manage the batch per user assignations
 global lst_batches
-lst_batches = os.listdir("batch_files")
-file_path = "batches_dict.txt"
+lst_batches = os.listdir("batch_files/") # directory with all the .csv files, one per batch
+file_path = "batches_dict.txt" # dictionary with the assignations, batch_m: [annotator_a, annotator_b]
 if os.path.exists(file_path):
     print(f'The file "{file_path}" exists.')
     with open(file_path, 'r') as file:
@@ -206,23 +206,37 @@ def submit_to_db():
         # load batch file that corresponds to the user
         csv_batch_file = "batch_files/" + current_user.batch_id
         lst_videos_ids, total_videos = my_functions.csv_batch_to_list(csv_batch_file)
-        # data obtained from the form
-        hs_tag = request.form['hs-tag']
+        """
+        Obtained data from the form
+        """
+        # Q0. Is the video relevant?
         relevant_tag = request.form['relevant-tag']
-        target_tag = request.form['target-tag']
-        communication_tags = request.form.getlist('communication-tag')
-        intention_tags = request.form.getlist('intention-tag')
-        factor_tags = request.form.getlist('factor-tag')
-        notes = request.form['txt-notes']
-        print("TAG HATE SPEECH", hs_tag)
         print("TAG RELEVANT", relevant_tag)
-        print("TAG TARGET", target_tag)
-        print("TAG COMMUNICATION", communication_tags)
-        print("TAG INTENTION", intention_tags)
-        print("TAG FACTOR", factor_tags)
+        # Q1. What content is it [0,1,2]=[neutral, innapropriate, hate-speech]
+        hs_tag = request.form['hs-tag']
+        print("TAG HATE SPEECH", hs_tag)
+        # factor, discrim, sexism, others [1,2,3]
+        #factor_tags = request.form.getlist('factor-tag')
+        #print("TAG FACTOR", factor_tags)
+        factor_tag = request.form['factor-tag']
+        print("TAG FACTOR", factor_tag)
+        # confidence tag
+        confidence_tag = request.form['confidence-tag']
+        print("TAG CONFIDENCE")
+        # individual/group
+        #target_tag = request.form['target-tag']
+        #print("TAG TARGET", target_tag)
+        # communication, txt, audio...
+        #communication_tags = request.form.getlist('communication-tag')
+        #print("TAG COMMUNICATION", communication_tags)
+        # intention, physical attack, disapproval, mocking
+        #intention_tags = request.form.getlist('intention-tag')
+        #print("TAG INTENTION", intention_tags)
+        # additional comments
+        notes = request.form['txt-notes']
         print("NOTES", notes)
-        if hs_tag == 1:
-            relevant_tag = 1
+        #if hs_tag == 1:
+        #    relevant_tag = 1
         # saving the annotations into a csv file
         file_path = DIR_PATH_ETIQUETADOS + current_user.batch_id[:-4] + "_" + current_user.username + "_labels.csv"
         video_id = lst_videos_ids[current_user.current_video_index]
@@ -230,12 +244,10 @@ def submit_to_db():
             writer = csv.writer(csvfile)
             writer.writerow([current_user.username,
                             video_id,
+                            relevant_tag,
                             hs_tag,
-                            relevant_tag, 
-                            target_tag,
-                            communication_tags,
-                            intention_tags,
-                            factor_tags,  
+                            factor_tag,
+                            confidence_tag,
                             notes])
         # update the current_video_index on the database
         try:
@@ -276,7 +288,7 @@ def next_video():
         return redirect(url_for("login")) 
 
 # route to assign a new batch to the user
-@app.route('/asignar_nuevo_batch', methods=['POST'])
+@app.route('/asignar_nuevo_batch', methods=['GET', 'POST'])
 def asignar_nuevo_batch():
     print("-----------------------\n/asignar_nuevo_batch\n-----------------------")
     # session of the user that logged-in
@@ -290,9 +302,13 @@ def asignar_nuevo_batch():
             current_user.current_video_index = 0
             db.session.commit()
             db.session.flush()
+            
             # ------------------------------------------------------------------------------------------
             print("----------------------------------------------------------- assing new batch")
             print("DB BATCH_ID UPDATED", current_user.batch_id, new_batch, current_user.current_video_index)
+             # Cerrar la sesión del usuario
+            logout_user()
+            print("Logout to redirect to login")
             # ------------------------------------------------------------------------------------------
             # updating the json string dictionary
             file_path = "batches_dict.txt"
@@ -300,8 +316,11 @@ def asignar_nuevo_batch():
             with open(file_path, 'w') as file:
                 file.write(json_string)
             print(f'The file "{file_path}" was updated.')
+
+            # Redirige a la página de inicio de sesión o a donde prefieras
+            return jsonify(success=True) #, redirect(url_for("login"))
             
-            return jsonify(success=True)
+            #return jsonify(success=True)
         except:
             return jsonify(success=False)
     else:
