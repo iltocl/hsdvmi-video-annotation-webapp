@@ -67,6 +67,7 @@ If you made changes and want to save the new requirements.
 pip freeze > requirements.txt
 ```
 ## Sharing the webapp
+### Option 1. ngrok
 We used [ngrok](https://ngrok.com/) to share our app. So, if you plan to use it too a download and configuration for ngrok is required. Once it is correctly installed on your system. To share the web app first execute the file `app.py` on your console:
 ```bash
 python app.py
@@ -77,6 +78,11 @@ Then, open another bash on the location where you installed the `ngrok.exe` file
 ngrok http port=5000
 ```
 If there is no problem you will be able to get a URL that allows you to share the app.
+### Option 2. VS Code 
+Execute the ```python app.py```. 
+On Visual Studio Code seach for the **Ports** options and **Forward a Port**. 
+Choose the port you used (by default Flask runs on port=5000).
+For testing the *private* visibility would be enough but if you want to share it (using a link) you should change the visibility to *public*.
 
 ## Web app Preview
 The web app looks like this:
