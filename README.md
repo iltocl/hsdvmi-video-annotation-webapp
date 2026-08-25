@@ -87,6 +87,3 @@ For testing the *private* visibility would be enough but if you want to share it
 ## Web app Preview
 The web app looks like this:
 ![preview-home](imgs/preview-home.PNG)
-
-# Media Coverage
-Documentation of the built-up of the ["Mexican Spanish based video dataset for the hate speech detection task"](https://github.com/iltocl/dcc-hsdvmi-video-dataset/blob/main/README.md)
